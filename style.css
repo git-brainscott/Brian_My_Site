@@ -1,0 +1,70 @@
+/* CSS GOES HERE */
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+section {
+    padding: 60px 40px;
+}
+
+section:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+section#about {
+    background-color: aqua;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+}
+
+h1 { 
+    font-family: sans-serif;
+    color: cyan; font-size: 48px; 
+}
+
+h2 {
+    
+    color: rgb(0, 0, 0);
+}
+
+div.row p {
+    font-family: sans-serif;
+}
+
+div.row p:first-child {
+    font-family: serif;
+    font-size: 20px;
+}
+
+div.titlesection {
+    text-align: left;
+}
+
+div.main_nav {
+    font-family: sans-serif;
+}
