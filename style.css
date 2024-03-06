@@ -48,7 +48,33 @@ footer {
 
 h1 { 
     font-family: sans-serif;
-    color: black; font-size: 48px; 
+    font-size: 80px;    
+}
+
+
+h1 {
+    background: linear-gradient(
+        to right,
+        #7953cd 20%,
+        #00affa 30%,
+        #0190cd 60%,
+        #764ada 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 400% auto;
+    animation: textShine 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
 }
 
 h2 {
@@ -56,8 +82,10 @@ h2 {
     color: rgb(0, 0, 0);
     padding-top: 40px;
     padding-bottom: 40px;
+    padding-left: 150px;
     
 }
+
 
 div.row p {
     font-family: sans-serif;
@@ -81,9 +109,13 @@ div.main_nav {
     justify-content: center;
 }
 
-img{
+img {
     margin-right: 5px;
     margin-bottom: 1px;
+    border: 3px solid #00C9FF;
+    border-radius: 3%;
+    width: 400px;
+    height: 400px;
 }
 
 p {
@@ -92,27 +124,13 @@ padding-right: 45px;
 }
 
 
-/* Having a lot of issues with this. it keeps coliding with "my work" when they should
-be seperate sections
+ul {list-style-type: circle;
+padding-right: 50px;
+padding-left: 50px;
+}
 
-.softwarelist {
-    float: left;
-    margin: 0 1.5%;
-    width: 30%;
-    
-  }
-
- .codinglist {
-    float: left;
-    margin: 0 1.5%;
-    width: 30%;
-  }
-
-  .misclist {
-    float: left;
-    margin: 0 1.5%;
-    width: 30%;
-   }
-   */
-
-   
+.row{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
