@@ -7,17 +7,21 @@ body {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-}
-section {
-    padding: 60px 40px;
+    background-color: #CFFCFF;
 }
 
-section:nth-child(even) {
-    background-color: #f2f2f2;
-}
+
 
 section#about {
-    background-color: aqua;
+    
+}
+
+section#contact {
+    
+}
+
+section#gallery {
+    display: flex;
 }
 
 .container {
@@ -33,23 +37,26 @@ nav ul {
     display: flex;
     flex-flow: row;
     justify-content: center;
-    gap: 10px;
+    gap: 50px;
 }
 
 footer {
-    background-color: #000;
-    color: #fff;
+    background-color: white;
+    color: black;
     padding: 10px;
 }
 
 h1 { 
     font-family: sans-serif;
-    color: cyan; font-size: 48px; 
+    color: black; font-size: 48px; 
 }
 
 h2 {
-    
+    font-family: sans-serif;
     color: rgb(0, 0, 0);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
 }
 
 div.row p {
@@ -68,3 +75,44 @@ div.titlesection {
 div.main_nav {
     font-family: sans-serif;
 }
+
+.tworow {
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    margin-right: 5px;
+    margin-bottom: 1px;
+}
+
+p {
+padding-left: 45px;
+padding-right: 45px;
+}
+
+
+/* Having a lot of issues with this. it keeps coliding with "my work" when they should
+be seperate sections
+
+.softwarelist {
+    float: left;
+    margin: 0 1.5%;
+    width: 30%;
+    
+  }
+
+ .codinglist {
+    float: left;
+    margin: 0 1.5%;
+    width: 30%;
+  }
+
+  .misclist {
+    float: left;
+    margin: 0 1.5%;
+    width: 30%;
+   }
+   */
+
+   
