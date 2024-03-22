@@ -4,9 +4,12 @@
   <meta charset="UTF-8">
   <title>Brian Scott - My Webpage!!</title>
   <link rel="stylesheet" href="style.css"> 
-  <link rel="responsivesheet" href="responsive.css">
+  <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
+
+  <div onclick="myMenu()" class="mobile-menu" id="menuButton"></div>
+
 
 <!-- header tag moves things to the header (or top) of the page. 
 "#" in coding terms means look for an id; look for a section or tag with that same name 
@@ -34,8 +37,9 @@ class tag links to what you want the certain css design to target. can be used f
   <section id="header" class="header">
    
     <div class="container">
+      <img src="images/l.jpeg" class="doodle" alt="dogdoodle">
     <h1 class="wipename">Brian Scott dot com</h1>
-    <img src="images/l.jpeg" class="doodle" alt="dogdoodle">
+  
   </div>
   </section>
   
@@ -71,61 +75,59 @@ class tag links to what you want the certain css design to target. can be used f
 </div>
 
 <!-- Skills Section -->  
+<!-- Skills Section -->  
 <p>
-<section id="skills">
-  <div class="container">
-    <div class="titlesection">
-  
-    </div>
-
-    <div class="row">
-    <div class="softwarelist">
-      <ul>
-      <h4> <u>Software</u> </h4>
-     
-      
-        <li>Apple Mac OS</li>
-        <li>iOS</li>
-        <li>Visual Studio Code</li>
-        <li>Adobe Illustrator</li>
-        <li>Adobe InDesign</li>
-        <li>Adobe Photoshop</li>
-        <li>Adobe Xd</li>
-        <li>Figma</li>
-        <li>Webflow </li>
-        <li>Google Docs</li>
-        <li> Microsoft Word</li>
-      </ul>
-  </div>
-
-<div class="codinglist">
-  <ul> 
-  <h4> <u> Coding </u> </h4>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>Javascript</li>
-  </ul>
-</div>
-
-<div class="misclist">
-  <ul>
-    <h4> <u>Misc</u> </h4>
-    <li>Set Design</li>
-    <li>Mediocre Drumming </li>
-    <li>Social Media</li>
- </ul>
+  <section id="skills">
+    <div class="container">
     
+    
+      <article class="episode">
+        <div class="episode__number">01</div>
+        <div class="episode__content">
+          <div class="title">Software</div>
+          <div class="story">
+            ○ Apple Mac OS/ iOS
+            ○ Visual Studio Code
+            ○ Adobe Illustrator
+            ○ Adobe InDesign
+            ○ Adobe Photoshop
+            ○ Adobe Xd
+            ○ Figma
+            ○ Webflow 
+            ○ Google Docs
+            ○ Microsoft Word
 
-</div>
+            <div><img src="images/skills1.jpeg" class="softwareskill" alt="skills"></div>
+          </div>
+        </div>
+      </article>
+      
+      <article class="episode">
+        <div class="episode__number">02</div>
+        <div class="episode__content">
+          <div class="title">Coding</div>
+          <div class="story">
+            ○ HTML
+            ○ CSS
+            ○ Javascript
+          <div><img src="images/skills2.jpeg" class="codeskill" alt="skills"></div>
 
-</div>
-
-
-
-  </div>
-</section>
-
-</p>
+        </div>
+      </article>
+      
+      <article class="episode">
+        <div class="episode__number">03</div>
+        <div class="episode__content">
+          <div class="title">Miscellaneous</div>
+          <div class="story">
+            ○ Set Design
+            ○ Mediocre Drumming
+            ○ Social Media
+          </div>
+        </div>
+      </article>
+    </div>
+      <!-- <h3 class="center"><a href="https://www.instagram.com/aristidebenoist/" target="_blank" rel="noopener noreferer">Inspired by Aristide Benoist</a></h3> -->
 
 <div class="headingwrapper">
   <h2>My Work</h2>
@@ -145,13 +147,13 @@ class tag links to what you want the certain css design to target. can be used f
     <div class="fourrow">
 
     <div class="tworow">
-      <div><img width="300" src="images/pexels-min-an-1454797.jpg" class="image" alt="Real Hands"/></div>
-      <div><img src="http://placehold.it/300x300" class="image" alt="Work Two"/></div>
+      <div><img width="300" src="images/bonnieclyde.jpg" class="image" alt="Real Hands"/></div>
+      <div><img src="images/bred.jpg" class="image" alt="Work Two"/></div>
     </div>
 
     <div class="tworow">
-      <div><img src="http://placehold.it/300x300" class="image" alt="Work Three"/></div>
-      <div><img src="http://placehold.it/300x300" class="image" alt="Work Four"/></div>
+      <div><img src="images/liebe.jpeg" class="image" alt="Work Three"/></div>
+      <div><img src="images/neonmuseum.jpg" class="image" alt="Work Four"/></div>
     </div>
 
     </div>
@@ -159,13 +161,13 @@ class tag links to what you want the certain css design to target. can be used f
     <div class="fourrow">
 
       <div class="tworow">
-        <div><img src="http://placehold.it/300x300" class="image" alt="Work Five"/></div>
-        <div><img src="http://placehold.it/300x300" class="image" alt="Work Six"/></div>
+        <div><img src="images/chasing.jpeg" class="image" alt="Work Five"/></div>
+        <div><img src="images/skoloswedel.jpg" class="image" alt="Work Six"/></div>
       </div>
 
       <div class="tworow">
-        <div><img src="http://placehold.it/300x300" class="image" alt="Work Seven"/></div>
-        <div><img src="http://placehold.it/300x300" class="image" alt="Work Eight"/></div>
+        <div><img src="images/hoefler.jpg" class="image" alt="Work Seven"/></div>
+        <div><img src="images/pollution.jpeg" class="image" alt="Work Eight"/></div>
       </div>
 
       </div>
@@ -235,6 +237,11 @@ class tag links to what you want the certain css design to target. can be used f
         <label for="exampleEmailInput">Email</label>
         <input class="u-full-width" type="email">
       </div>
+
+      <div class="six columns">
+        <label for="exampleEmailInput">Subject</label>
+        <input class="u-full-width" type="text">
+      </div>
     
       <div>
         <label for="exampleMessage">Message</label>
@@ -243,6 +250,7 @@ class tag links to what you want the certain css design to target. can be used f
       <input class="button-primary" type="submit" value="Submit">
     </form>
   </div>
+  
 </section>
 </p>
 <!-- Footer Section -->  
@@ -250,11 +258,18 @@ class tag links to what you want the certain css design to target. can be used f
 <footer>
   <div class="container">
    
-          <a class="smoothscroll" href="#header">Home</a>
-        
-      
+          <a class="smoothscroll" href="#header">Top</a>
+         
   </div>
 </footer>
+
+<script>
+  function myMenu () {
+  document.getElementById('mymenu').classList.toggle('open');
+  document.getElementById('menuButton').classList.('toggle');
+  }
+</script>
+<!-- <h3 class="center"><a href="https://www.instagram.com/aristidebenoist/" target="_blank" rel="noopener noreferer">Inspired by Aristide Benoist</a></h3> -->
 
 <script src="script.js"></script>
 </body>
@@ -266,4 +281,11 @@ class tag links to what you want the certain css design to target. can be used f
 
 
   
-</div>
+
+
+
+
+
+
+
+

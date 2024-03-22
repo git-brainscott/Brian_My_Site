@@ -1,6 +1,13 @@
 /* TABLET VIEW */
 @media only screen and (max-width:768px) {
+    .mobile-menu {
+        display: block; 
+      }
 
+      .main_nav  {
+        display: none;
+      }
+      
 }
 
 /* MOBILE VIEW */
