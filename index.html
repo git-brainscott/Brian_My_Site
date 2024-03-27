@@ -21,17 +21,19 @@ class tag links to what you want the certain css design to target. can be used f
   <div class="main_nav">
     <nav>
       <ul>
-        <li><a class="smoothscroll" href="#header">Home</a></li>
-        <li><a class="smoothscroll" href="#about">About</a></li>
-        <li><a class="smoothscroll" href="#skills">Skills</a></li>
-        <li><a class="smoothscroll" href="#gallery">Gallery</a></li>
-        <li><a class="smoothscroll" href="#faqs">FAQs</a></li>
-        <li><a class="smoothscroll" href="#contact">Contact</a></li>
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#faqs">FAQs</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
+
+<div onclick="myMenu()" class="mobile_menu" id="menubutton"></div>
 
 <!-- Main Header --> 
   <section id="header" class="header">
@@ -43,14 +45,25 @@ class tag links to what you want the certain css design to target. can be used f
   </div>
   </section>
   
-  <div class="headingwrapper">
+  <div class="headingwrapper" id="about">
     <h2>About Me</h2>
       <div class="line"></div>
       </div>
 
+
+    <div id="mymenu" class="mobile_menu_popout">
+      <ul>
+        <li><a onclick="remove()" class="linkie" href="#header">Home</a></li>
+        <li><a onclick="remove()" class="linkie" href="#about">About</a></li>
+        <li><a onclick="remove()" class="linkie" href="#skills">Skills</a></li>
+        <li><a onclick="remove()" class="linkie" href="#gallery">Gallery</a></li>
+        <li><a onclick="remove()" class="linkie" href="#faqs">FAQs</a></li>
+        <li><a onclick="remove()" class="linkie" href="#contact">Contact</a></li>
+      </ul>
+    </div>
     
 <!-- About Section --> 
-<section id="about">
+<section>
   <div class="container">
     <div class="row">
       <div class="titlesection">
@@ -69,15 +82,15 @@ class tag links to what you want the certain css design to target. can be used f
   </div>
 </section>
 
-<div class="headingwrapper">
+<div class="headingwrapper" id="skills">
 <h2>Skills</h2>
 <div class="line"></div>
 </div>
 
-<!-- Skills Section -->  
+  
 <!-- Skills Section -->  
 <p>
-  <section id="skills">
+  <section>
     <div class="container">
     
     
@@ -129,7 +142,8 @@ class tag links to what you want the certain css design to target. can be used f
     </div>
       <!-- <h3 class="center"><a href="https://www.instagram.com/aristidebenoist/" target="_blank" rel="noopener noreferer">Inspired by Aristide Benoist</a></h3> -->
 
-<div class="headingwrapper">
+      
+<div class="headingwrapper" id="gallery">
   <h2>My Work</h2>
     <div class="line"></div>
     </div>
@@ -138,7 +152,7 @@ class tag links to what you want the certain css design to target. can be used f
 
 <!-- Gallery Section -->  
 <p>
-<section id="gallery">
+<section>
   <div class="container">
     <div class="titlesection">
     
@@ -175,7 +189,7 @@ class tag links to what you want the certain css design to target. can be used f
 </section>
 
 </p>
-
+<section id="faqs">
 
     <div class="headingwrapper">
       <h2>Frequently Asked Questions</h2>
@@ -185,7 +199,7 @@ class tag links to what you want the certain css design to target. can be used f
 
 <!-- Testimonials Section --> 
 <p> 
-<section id="faqs">
+
   <div class="container">
     <div class="titlesection">
     
@@ -267,7 +281,14 @@ class tag links to what you want the certain css design to target. can be used f
 <script>
   function myMenu () {
   document.getElementById('mymenu').classList.toggle('open');
-  document.getElementById('menuButton').classList.('toggle');
+  document.getElementById('menuButton').classList.toggle('close');
+  }
+</script>
+
+<script>
+  function remove () {
+  document.getElementById('mymenu').classList.remove('open');
+  document.getElementById('menuButton').classList.remove('close');
   }
 </script>
 <!-- <h3 class="center"><a href="https://www.instagram.com/aristidebenoist/" target="_blank" rel="noopener noreferer">Inspired by Aristide Benoist</a></h3> -->
