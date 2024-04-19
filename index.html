@@ -12,6 +12,10 @@
   <div onclick="myMenu()" class="mobile-menu" id="menuButton"></div>
 
 
+  <div onclick="modeDark()" class="darkmodebutton" id="darkButton"></div>
+  <button class="darkmodebutton"> Dark Mode </button>
+
+
 <!-- header tag moves things to the header (or top) of the page. 
 "#" in coding terms means look for an id; look for a section or tag with that same name 
 class tag links to what you want the certain css design to target. can be used for different sections with same design settings --> 
@@ -359,7 +363,7 @@ class tag links to what you want the certain css design to target. can be used f
     aDark[i].classList.toggle('.a-dark');
     }
 
-    const episodenumberDark = document.querySelectorAll('episode__number')
+    const episodenumberDark = document.querySelectorAll('.episode__number')
     for (let i = 0; 1 < episodenumberDark.length;i++ ){
     episodenumberDark[i].classList.toggle('.episode__number-dark');
     }
@@ -410,6 +414,15 @@ class tag links to what you want the certain css design to target. can be used f
   document.getElementById('menuButton').classList.remove('close');
   }
 </script>
+
+
+<script>
+  function modeDark () {
+  document.getElementById('mymenu').classList.toggle('open');
+  document.getElementById('menuButton').classList.toggle('close');
+  }
+</script>
+
 <!-- <h3 class="center"><a href="https://www.instagram.com/aristidebenoist/" target="_blank" rel="noopener noreferer">Inspired by Aristide Benoist</a></h3> -->
 
 <script src="script.js"></script>

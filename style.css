@@ -376,6 +376,23 @@ img.softwareskill {
    color: #ffffff !important;
   }
 
+
+  .darkmodebutton {
+ position: fixed;
+right: 1px;
+background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 999;
+
+    width:100px; 
+    background:#00c9ff; 
+    height: 60px; 
+    font-size: 18px;  
+    border-color:#00c9ff;
+    border-radius: 10px;
+  }
+
   .linkie {
     color: #CFFCFF;
     font-size: 30px;
