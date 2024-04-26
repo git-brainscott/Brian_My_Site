@@ -12,9 +12,124 @@
   <div onclick="myMenu()" class="mobile-menu" id="menuButton"></div>
 
 
-  <div onclick="modeDark()" class="darkmodebutton" id="darkButton"></div>
-  <button class="darkmodebutton"> Dark Mode </button>
+  
 
+
+<button onclick="theDarkness()" class="darkmodebutton" id="darkButton"> Dark Mode </button>
+
+<script>
+  function theDarkness() {
+     document.getElementsByTagName('body')[0].classList.toggle('body-dark');
+
+     document.getElementsByTagName('footer')[0].classList.toggle('footer-dark');
+     
+     document.getElementsByClassName('line')[0].classList.toggle('line-dark');
+     document.getElementsByClassName('line')[1].classList.toggle('line-dark');
+     document.getElementsByClassName('line')[2].classList.toggle('line-dark');
+     document.getElementsByClassName('line')[3].classList.toggle('line-dark');
+     document.getElementsByClassName('line')[4].classList.toggle('line-dark');
+     document.getElementsByTagName('a')[0].classList.toggle('a-dark');
+     document.getElementsByTagName('a')[1].classList.toggle('a-dark');
+     document.getElementsByTagName('a')[2].classList.toggle('a-dark');
+     document.getElementsByTagName('a')[3].classList.toggle('a-dark');
+     document.getElementsByTagName('a')[4].classList.toggle('a-dark');
+     document.getElementsByTagName('a')[5].classList.toggle('a-dark');
+     document.getElementsByTagName('p')[0].classList.toggle('p-dark');
+     
+
+
+
+
+     const h2Dark = document.querySelectorAll('h2')
+      for (let i = 0; 1 < h2Dark.length;i++ ){
+        h2Dark[i].classList.toggle('h2-dark');
+      }
+
+      const h4Dark = document.querySelectorAll('h4')
+      for (let i = 0; 1 < h4Dark.length;i++ ){
+        h4Dark[i].classList.toggle('h4-dark');
+      }
+
+      const episodecontentDark = document.querySelectorAll('.episode__content')
+        for (let i = 0; 1 < episodecontentDark.length;i++ ){
+        episodecontentDark[i].classList.toggle('episode__content-dark');
+      }
+
+      const imgDark = document.querySelectorAll('img')
+        for (let i = 0; 1 < imgDark.length;i++ ){
+        imgDark[i].classList.toggle('img-dark');
+      }
+
+      const liDark = document.querySelectorAll('li')
+        for (let i = 0; 1 < liDark.length;i++ ){
+        liDark[i].classList.toggle('li-dark');
+      }
+
+      const imgDoodleDark = document.querySelectorAll('img.doodle')
+        for (let i = 0; 1 < imgDoodleDark.length;i++ ){
+        imgDoodleDark[i].classList.toggle('img.doodle-dark');
+      }
+
+      const accordionDark = document.querySelectorAll('.accordion')
+        for (let i = 0; 1 < accordionDark.length;i++ ){
+        accordionDark[i].classList.toggle('accordion-dark');
+      }
+
+      const activeAccordionDark = document.querySelectorAll('.active, .accordion:hover')
+        for (let i = 0; 1 < activeAccordionDark.length;i++ ){
+        activeAccordionDark[i].classList.toggle('active-dark');
+      }
+
+      const afterAccordDark = document.querySelectorAll('.accordion:after')
+        for (let i = 0; 1 < afterAccordDark.length;i++ ){
+        afterAccordDark[i].classList.toggle('accordion:after-dark');
+      }
+
+      const mobilemenupopoutDark = document.querySelectorAll('.mobile_menu_popout')
+        for (let i = 0; 1 < mobilemenupopoutDark.length;i++ ){
+        mobilemenupopoutDark[i].classList.toggle('mobile_menu_popout-dark');
+      }
+
+      const linkieDark = document.querySelectorAll('.linkie')
+        for (let i = 0; 1 < linkieDark.length;i++ ){
+        linkieDark[i].classList.toggle('linkie-dark');
+      }
+
+      const episodenumberDark = document.querySelectorAll('.episode__number')
+        for (let i = 0; 1 < episodenumberDark.length;i++ ){
+        episodenumberDark[i].classList.toggle('episode__number-dark');
+      }
+
+      const ahoverDark = document.querySelectorAll('a:hover')
+        for (let i = 0; 1 < ahoverDark.length;i++ ){
+        ahoverDark[i].classList.toggle('a:hover-dark');
+      }
+
+      const fullwidthDark = document.querySelectorAll('.u-full-width')
+        for (let i = 0; 1 < fullwidthDark.length;i++ ){
+        fullwidthDark[i].classList.toggle('.u-full-width-dark');
+      }
+
+      const fullmessageDark = document.querySelectorAll('.u-full-message')
+        for (let i = 0; 1 < fullmessageDark.length;i++ ){
+        fullmessageDark[i].classList.toggle('.u-full-message-dark');
+      }
+
+      const buttonDark = document.querySelectorAll('.button-primary')
+        for (let i = 0; 1 < buttonDark.length;i++ ){
+        buttonDark[i].classList.toggle('.button-primary-dark');
+      }
+
+      const contactcolumnDark = document.querySelectorAll('.contact_columns')
+        for (let i = 0; 1 < contactcolumnDark.length;i++ ){
+        contactcolumnDark[i].classList.toggle('.contact_columns-dark');
+      }
+
+  }
+
+
+
+</script>
 
 <!-- header tag moves things to the header (or top) of the page. 
 "#" in coding terms means look for an id; look for a section or tag with that same name 
@@ -283,123 +398,7 @@ class tag links to what you want the certain css design to target. can be used f
   </div>
 </footer>
 
-<script>
-  function darkMode() {
 
-    const cardDark = document.querySelectorAll('.card')
-    for (let i = 0; 1 < cardDark.length;i++ ){
-    cardDark[i].classList.toggle('card-dark');
-    }
-    document.getElementsByTagName('body') (0).classList.toggle
-
-    
-    const bodyDark = document.querySelectorAll('body')
-    for (let i = 0; 1 < bodyDark.length;i++ ){
-    bodyDark[i].classList.toggle('body-dark');
-    }
-
-    const footerDark = document.querySelectorAll('footer')
-    for (let i = 0; 1 < footerDark.length;i++ ){
-    footerDark[i].classList.toggle('.footer-dark');
-    }
-
-    const h2Dark = document.querySelectorAll('h2')
-    for (let i = 0; 1 < h2Dark.length;i++ ){
-    h2Dark[i].classList.toggle('.h2-dark');
-    }
-
-    const lineDark = document.querySelectorAll('.line')
-    for (let i = 0; 1 < lineDark.length;i++ ){
-    lineDark[i].classList.toggle('.line-dark');
-    }
-
-    const imgDark = document.querySelectorAll('img')
-    for (let i = 0; 1 < imgDark.length;i++ ){
-    imgDark[i].classList.toggle('.img-dark');
-    }
-
-    const ulDark = document.querySelectorAll('ul')
-    for (let i = 0; 1 < ulDark.length;i++ ){
-    ulDark[i].classList.toggle('.ul-dark');
-    }
-
-    const liDark = document.querySelectorAll('li')
-    for (let i = 0; 1 < liDark.length;i++ ){
-    liDark[i].classList.toggle('.il-dark');
-    }
-
-    const imgdoodleDark = document.querySelectorAll('img.doodle')
-    for (let i = 0; 1 < imgdoodleDark.length;i++ ){
-    imgdoodleDark[i].classList.toggle('img.doodle-dark');
-    }
-
-    const accordionDark = document.querySelectorAll('.accordion ')
-    for (let i = 0; 1 < accordionDark.length;i++ ){
-    accordionDark[i].classList.toggle('.accordion-dark');
-    }
-
-    const activeaccordionDark = document.querySelectorAll('.active, .accordion:hover')
-    for (let i = 0; 1 < activeaccordionDark.length;i++ ){
-    activeaccordionDark[i].classList.toggle('.active-dark');
-    }
-
-    const accordionafterDark = document.querySelectorAll('.accordion:after')
-    for (let i = 0; 1 < accordionafterDark.length;i++ ){
-    accordionafterDark[i].classList.toggle('.accordion:after-dark');
-    }
-
-    const mobilemenupopoutDark = document.querySelectorAll('.mobile_menu_popout')
-    for (let i = 0; 1 < mobilemenupopoutDark.length;i++ ){
-    mobilemenupopoutDark[i].classList.toggle('.mobile_menu_popout-dark');
-    }
-
-    const linkieDark = document.querySelectorAll('.linkie')
-    for (let i = 0; 1 < linkieDark.length;i++ ){
-    linkieDark[i].classList.toggle('.linkie-dark');
-    }
-
-    const aDark = document.querySelectorAll('a')
-    for (let i = 0; 1 < aDark.length;i++ ){
-    aDark[i].classList.toggle('.a-dark');
-    }
-
-    const episodenumberDark = document.querySelectorAll('.episode__number')
-    for (let i = 0; 1 < episodenumberDark.length;i++ ){
-    episodenumberDark[i].classList.toggle('.episode__number-dark');
-    }
-
-    const ahoverDark = document.querySelectorAll('a:hover')
-    for (let i = 0; 1 < ahoverDark.length;i++ ){
-    ahoverDark[i].classList.toggle('.a:hover-dark');
-    }
-
-    const episodecontentDark = document.querySelectorAll('.episode__content')
-    for (let i = 0; 1 < episodecontentDark.length;i++ ){
-    episodecontentDark[i].classList.toggle('.episode__content-dark');
-    }
-
-    const fullwidthDark = document.querySelectorAll('.u-full-width')
-    for (let i = 0; 1 < fullwidthDark.length;i++ ){
-    fullwidthDark[i].classList.toggle('.u-full-width-dark');
-    }
-
-    const fullmessageDark = document.querySelectorAll('.u-full-message')
-    for (let i = 0; 1 < fullmessageDark.length;i++ ){
-    fullmessageDark[i].classList.toggle('.u-full-message-dark');
-    }
-
- const buttonDark = document.querySelectorAll('.button-primary')
-    for (let i = 0; 1 < buttonDark.length;i++ ){
-    buttonDark[i].classList.toggle('.button-primary-dark');
-    }
-
-    const contactcolumnDark = document.querySelectorAll('.contact_columns')
-    for (let i = 0; 1 < contactcolumnDark.length;i++ ){
-    contactcolumnDark[i].classList.toggle('.contact_columns-dark');
-    }
-  }
-
-</script>
 
 <script>
   function myMenu () {
@@ -416,12 +415,6 @@ class tag links to what you want the certain css design to target. can be used f
 </script>
 
 
-<script>
-  function modeDark () {
-  document.getElementById('mymenu').classList.toggle('open');
-  document.getElementById('menuButton').classList.toggle('close');
-  }
-</script>
 
 <!-- <h3 class="center"><a href="https://www.instagram.com/aristidebenoist/" target="_blank" rel="noopener noreferer">Inspired by Aristide Benoist</a></h3> -->
 
