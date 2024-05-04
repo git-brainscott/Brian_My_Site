@@ -8,6 +8,7 @@ body {
     font: inherit;
     vertical-align: baseline;
     background-color: #CFFCFF;
+    color:#000000;
 }
 
 .body-dark{
@@ -18,6 +19,7 @@ body {
   font: inherit;
   vertical-align: baseline;
   background-color: #2B2F30 !important;
+  color: #FFF;
 
 }
 
@@ -71,6 +73,12 @@ h1 {
     font-family: sans-serif;
     font-size: 80px;  
     
+}
+
+.h1_dark {
+  font-family: sans-serif;
+  font-size: 80px;
+  color: #ffffff;
 }
 
 
@@ -156,6 +164,8 @@ div.title {
 
 div.main_nav {
     font-family: sans-serif;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .tworow {
@@ -182,8 +192,8 @@ img {
 }
 
 p {
-padding-left: 45px;
-padding-right: 45px;
+padding-left: 90px;
+padding-right: 90px;
 margin-top: 45px;
 margin-bottom: 45px;
 }
@@ -226,8 +236,8 @@ img.doodle{
     margin-top: 10px;
     border: 3px solid #00C9FF;
     border-radius: 3%;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 225px;
 }
 
 img.doodle-dark{
@@ -257,8 +267,8 @@ img.softwareskill {
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-    background-color: #CFFCFF;
-    color: #444;
+   
+   background-color: #CFFCFF;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -269,7 +279,7 @@ img.softwareskill {
   }
   
   .accordion-dark {
-    background-color: #2B2F30 !important;
+   
     color: #444 !important;
     cursor: pointer;
     padding: 18px;
@@ -292,7 +302,7 @@ img.softwareskill {
   /* Style the accordion panel. Note: hidden by default */
   .panel {
     padding: 0 18px;
-    background-color: #CFFCFF;
+    
     display: none;
     overflow: hidden;
   }
@@ -429,8 +439,8 @@ a {
 }
 
 a:hover {
-  background: #764ada;
-  color: #CFFCFF;
+ 
+  color: #764ada;
 }
 
 .a:hover-dark {
@@ -473,7 +483,7 @@ a:hover {
   text-align: center;
   height: calc(10vw + 20px);
   transition: all 0.2s ease-in;
-  color: #FFFFFF !important;
+  color: #FFF !important; 
 }
 
 
@@ -521,6 +531,7 @@ a:hover {
   background-image: url(images/menuclose.svg ) ;
 
 }
+
 
 #contact {
  text-align: center;
@@ -609,3 +620,151 @@ div.contact_columns {
   margin-top: 10px;
   margin-bottom: 20px;
 }
+
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.material-fill-1 {
+    font-variation-settings:
+        'FILL'1,
+        'wght'400,
+        'GRAD'0,
+        'opsz'48
+}
+
+a:hover{
+  text-decoration: underline;
+}
+.gallery {
+    --_height: 250px; 
+    --_gap: .5rem;
+  display: flex;
+    --_grid-rows: var(--_height) var(--_height) var(--_height);
+    --_height-hover: calc(var(--_height) * 2);
+    --_height-not-hover: calc(var(--_height) / 2);
+   margin-right: auto;
+  margin-left: auto;
+    width: 100%;  
+    max-width: 800px;
+    display: grid;
+    gap: var(--_gap);
+}
+@media (min-width:720px){
+  .gallery {
+      grid-template-columns: repeat(3,1fr);
+  }
+  
+}
+.gallery>div {
+    height: fit-content;
+    display: grid;
+    grid-template-rows: var(--_grid-rows);
+    gap: var(--_gap);
+    transition: grid-template-rows 300ms ease-in-out;
+}
+.gallery>div>article {
+    position: relative;
+    text-align: center;
+}
+.gallery>div>article>div{
+   position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #00000070;
+  font-size: 0.65rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+  padding: .15rem 0.5rem;
+  
+}
+.gallery>div>article>div>span{
+  font-size: 0.7rem;
+  color: red;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+.gallery>div:has(>article:nth-child(1):hover) {
+    --_grid-rows: var(--_height-hover) var(--_height-not-hover) var(--_height-not-hover);
+}
+.gallery>div:has(>article:nth-child(2):hover) {
+    --_grid-rows: var(--_height-not-hover) var(--_height-hover) var(--_height-not-hover);
+}
+.gallery>div:has(>article:nth-child(3):hover) {
+    --_grid-rows: var(--_height-not-hover) var(--_height-not-hover) var(--_height-hover);
+}
+.gallery>div>article:hover {
+    background-color: rgb(151, 152, 201);
+    color: #FFF;
+}
+
+
+
+
+
+
+
+
+img {
+  max-height: 300px%;
+  max-width: 300px;
+}
+
+
+
+a:hover {
+  color: #bbb;
+}
+
+.italic { font-style: italic; }
+.small { font-size: 0.8em; }
+
+/** LIGHTBOX MARKUP **/
+
+.lightbox {
+  /* Default to hidden */
+  display: none;
+
+  /* Overlay entire screen */
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  
+  /* A bit of padding around image */
+  padding: 1em;
+
+  /* Translucent background */
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Unhide the lightbox when it's the target */
+.lightbox:target {
+  display: block;
+}
+
+.lightbox span {
+  /* Full width and height */
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  /* Size and position background image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
