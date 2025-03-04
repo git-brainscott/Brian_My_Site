@@ -337,12 +337,40 @@ class tag links to what you want the certain css design to target. can be used f
         <label for="exampleMessage"></label>
         <textarea class="u-full-message"> Message</textarea>
       </div>
-      <input class="button-primary" type="submit" value="Submit" a href="mailto:brrosco223@gmail.com">
+      <input class="button-primary" type="submit" value="Submit">
     </form>
   </div>
   
+
+   <!-- Include the EmailJS script -->
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+  
+   <script type="text/javascript">
+     // Initialize EmailJS with your user ID
+     emailjs.init('6y7IxAxeZ7bX1hE1C');  // Replace with your EmailJS user ID
+ 
+     // Handle form submission
+     document.getElementById('contact-form').addEventListener('submit', function(event) {
+       event.preventDefault(); // Prevent page refresh
+ 
+       // Send the form data to EmailJS
+       emailjs.sendForm('service_szrz899', 'service_szrz899', this)  // Replace with your service ID and template ID
+         .then(function(response) {
+           alert('Message sent successfully!');
+         }, function(error) {
+           alert('Error sending message: ' + error.text);
+         });
+     });
+   </script>
+ </section>
 </section>
 </p>
+
+
+
+fdjldhslf
+
+
 <!-- Footer Section -->  
 
 <footer>
