@@ -26,5 +26,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "Sorry, something went wrong. Please try again later.";
     }
-}
+} 
 ?>
