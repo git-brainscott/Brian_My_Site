@@ -1,30 +1,21 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Get form data
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $subject = htmlspecialchars($_POST['subject']);
-    $message = htmlspecialchars($_POST['message']);
-    
-    // Email settings
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $subject = $_POST["subject"];
+    $message = $_POST["message"];
+
     $to = "brianiscoolieo957@gmail.com"; // Replace with your email
-    $subject = "New Contact Form Submission: $subject";
-    $headers = "From: $email" . "\r\n" .
-               "Reply-To: $email" . "\r\n" .
-               "X-Mailer: PHP/" . phpversion();
+    $subject_email = "Contact Form Submission: " . $subject; //added subject from form.
+    $body = "Name: $name\nEmail: $email\nSubject: $subject\nMessage: $message";
+    $headers = "From: brianiscoolieo957@gmail.com"; // Replace with a valid 'from' address
 
-    // Prepare the email body
-    $email_body = "You have received a new message from your website contact form.\n\n";
-    $email_body .= "Name: $name\n";
-    $email_body .= "Email: $email\n";
-    $email_body .= "Subject: $subject\n";
-    $email_body .= "Message:\n$message\n";
-
-    // Send the email
-    if (mail($to, $subject, $email_body, $headers)) {
-        echo "Thank you for your message. It has been sent.";
+    if (mail($to, $subject_email, $body, $headers)) {
+        echo "Thank you! Your message has been sent.";
     } else {
-        echo "Sorry, something went wrong. Please try again later.";
+        echo "Sorry, there was an error sending your message.";
     }
-} 
+} else {
+    echo "Invalid request.";
+}
 ?>

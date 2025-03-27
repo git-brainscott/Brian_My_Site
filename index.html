@@ -319,23 +319,23 @@ class tag links to what you want the certain css design to target. can be used f
     </div>
     <form action="send_email.php" method="POST">
       <div class="contact_columns">
-        <label for="exampleRecipientInput">Name</label>
-        <input class="u-full-width" type="text" style="width: 50%;">
+        <label for="name">Name</label>
+        <input class="u-full-width" type="text" id="name" name="name" style="width: 50%;" required>
       </div>
       
       <div class="contact_columns">
-        <label for="exampleEmailInput" >Email</label>
-        <input class="u-full-width" type="email" style="width: 50%;">
+        <label for="email" >Email</label>
+        <input class="u-full-width" type="email" id="email" name="email" style="width: 50%;" required>
       </div>
 
       <div class="contact_columns">
-        <label for="exampleSunjectInput">Subject</label>
-        <input class="u-full-width" type="text" style="width: 50%;"> 
+        <label for="subject">Subject</label>
+        <input class="u-full-width" type="text" id="subject" name="subject" style="width: 50%;"> 
       </div>
     
       <div class="contact_message">
-        <label for="exampleMessage"></label>
-        <textarea class="u-full-message"> Message</textarea>
+        <label for="message"></label>
+        <textarea class="u-full-message" id="message" name="message" required>Message</textarea>
       </div>
       <input class="button-primary" type="submit" value="Submit">
     </form>
