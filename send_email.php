@@ -5,10 +5,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = $_POST["subject"];
     $message = $_POST["message"];
 
-    $to = "brianiscoolieo957@gmail.com"; // Replace with your email
+    $to = "email@gmail.com"; // Replace with your email
     $subject_email = "Contact Form Submission: " . $subject; //added subject from form.
     $body = "Name: $name\nEmail: $email\nSubject: $subject\nMessage: $message";
-    $headers = "From: brianiscoolieo957@gmail.com"; // Replace with a valid 'from' address
+    $headers = "From: email@gmail.com"; // Replace with a valid 'from' address
 
     if (mail($to, $subject_email, $body, $headers)) {
         echo "Thank you! Your message has been sent.";
