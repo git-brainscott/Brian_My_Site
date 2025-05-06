@@ -703,10 +703,7 @@ a:hover{
 .gallery>div:has(>article:nth-child(3):hover) {
     --_grid-rows: var(--_height-not-hover) var(--_height-not-hover) var(--_height-hover);
 }
-.gallery>div>article:hover {
-    
-    color: #FFF;
-}
+
 
 
 
