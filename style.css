@@ -557,6 +557,7 @@ a:hover {
 
 
 .u-full-message {
+  padding: 10px;
   margin-top: 20px;
   border-radius: 10px;
   border:none;
