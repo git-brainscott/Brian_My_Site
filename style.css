@@ -645,8 +645,8 @@ a:hover{
     --_gap: .5rem;
   display: flex;
     --_grid-rows: var(--_height) var(--_height) var(--_height);
-    --_height-hover: calc(var(--_height) * 2);
-    --_height-not-hover: calc(var(--_height) / 2);
+    --_height-hover: calc(var(--_height) * 1.3);
+    --_height-not-hover: calc(var(--_height) / 1);
    margin-right: auto;
   margin-left: auto;
     width: 100%;  
